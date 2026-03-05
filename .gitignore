@@ -1,0 +1,6 @@
+# Quarto
+/_site/
+/.quarto/
+
+# macOS
+.DS_Store
