@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://juanmasullo.com/about.html</loc>
-    <lastmod>2026-03-05T23:06:30.692Z</lastmod>
-  </url>
-  <url>
-    <loc>https://juanmasullo.com/index.html</loc>
-    <lastmod>2026-03-05T23:04:10.306Z</lastmod>
+    <loc>https://juanmasullo.com/cv.html</loc>
+    <lastmod>2026-03-06T12:48:10.737Z</lastmod>
   </url>
   <url>
     <loc>https://juanmasullo.com/publications.html</loc>
-    <lastmod>2026-03-05T21:56:30.517Z</lastmod>
+    <lastmod>2026-03-06T15:30:35.371Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juanmasullo.com/index.html</loc>
+    <lastmod>2026-03-06T14:25:54.875Z</lastmod>
+  </url>
+  <url>
+    <loc>https://juanmasullo.com/about.html</loc>
+    <lastmod>2026-03-06T15:17:45.166Z</lastmod>
   </url>
 </urlset>
