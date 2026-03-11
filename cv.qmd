@@ -1,0 +1,7 @@
+---
+title: CV
+---
+
+A current version of my curriculum vitae is available below.
+
+[Download CV | 02.2026 (PDF)](files/cv.pdf){.btn .btn-secondary .btn-sm}

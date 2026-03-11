@@ -1,7 +1,34 @@
 ---
-title: "juanmasullo-site"
+title: ""
+page-layout: full
+body-class: homepage
 ---
 
-This is a Quarto website.
+![](images/background.jpg){.hero-banner}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Juan Masullo J. <span class="tagline">(and passionate rock climber)</span>
+
+<span class="affiliation">[**University of Milan**](https://www.unimi.it/en/ugov/ou-structure/department-social-and-political-sciences)</span>
+
+I am an Assistant Professor of Political Science at the University of Milan and a research affiliate at Leiden University. My research focuses on political and criminal violence, with a particular focus on Latin America.
+
+Using a range of methods, I study how individuals and communities respond to violence, the legacies these responses leave and how exposure to violence shapes political attitudes and behavior.
+
+
+<div class="profile-icons">
+
+<a href="mailto:juan.masullo@unimi.it" title="Email">
+<i class="bi bi-envelope"></i>
+</a>
+
+<a href="https://scholar.google.com/citations?user=YOURID" target="_blank" title="Google Scholar">
+<i class="ai ai-google-scholar"></i>
+</a>
+
+<a href="https://orcid.org/0000-0002-8537-2991" target="_blank" title="ORCID">
+<i class="ai ai-orcid"></i>
+</a>
+
+</div>
+
+[About](about.qmd) | [Publications](publications.qmd) | [CV](cv.qmd)

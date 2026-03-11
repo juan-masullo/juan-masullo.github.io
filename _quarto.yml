@@ -1,21 +1,27 @@
 project:
   type: website
+  resources:
+    - CNAME
 
 website:
-  title: "juanmasullo-site"
+  title: "Juan Masullo J."
+  site-url: https://juanmasullo.com
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: Home
+        href: index.qmd
+      - text: About
+        href: about.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: CV
+        href: cv.qmd
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
-    toc: true
-
-
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
 
