@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
   resources:
     - CNAME
 
@@ -24,4 +25,3 @@ format:
     include-in-header:
       text: |
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
-
