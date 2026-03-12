@@ -6,14 +6,21 @@ body-class: homepage
 
 ![](images/background.jpg){.hero-banner}
 
-# Juan Masullo J. <span class="tagline">(and passionate rock climber)</span>
+<div class="homepage-header">
 
-<span class="affiliation">[**University of Milan**](https://www.unimi.it/en/ugov/ou-structure/department-social-and-political-sciences)</span>
+<h1>Juan Masullo J.</h1>
+
+<p class="homepage-subtitle">Political Scientist <em>(and passionate rock climber)</em></p>
+
+<p class="homepage-affiliation">
+<a href="https://www.unimi.it/en/ugov/ou-structure/department-social-and-political-sciences">University of Milan</a>
+</p>
+
+</div>
 
 I am an Assistant Professor of Political Science at the University of Milan and a research affiliate at Leiden University. My research focuses on political and criminal violence, with a particular focus on Latin America.
 
 Using a range of methods, I study how individuals and communities respond to violence, the legacies these responses leave and how exposure to violence shapes political attitudes and behavior.
-
 
 <div class="profile-icons">
 
@@ -30,5 +37,3 @@ Using a range of methods, I study how individuals and communities respond to vio
 </a>
 
 </div>
-
-[About](about.qmd) | [Publications](publications.qmd) | [CV](cv.qmd)
