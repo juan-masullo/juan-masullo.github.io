@@ -9,8 +9,6 @@ website:
   site-url: https://juanmasullo.com
   navbar:
     left:
-      - text: Home
-        href: index.qmd
       - text: About
         href: about.qmd
       - text: Publications

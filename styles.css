@@ -1,119 +1,197 @@
-/* ---- GLOBAL DARK THEME ---- */
+/* =====================================================
+   GLOBAL DARK THEME
+===================================================== */
 
 body {
-  background-color: #2f2f2f;
+  background-color: #2f2f2f !important;
   color: #f5f5f5;
   padding-top: 60px !important;
 }
 
-/* ---- HOMEPAGE ---- */
+main {
+  color: #f5f5f5;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* links */
+
+a {
+  color: #1f8a8a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3fb3b3;
+  text-decoration: underline;
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: rgba(38,38,38,0.95) !important;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar a,
+.navbar-brand {
+  color: #f5f5f5 !important;
+}
+
+.navbar a:hover,
+.navbar-brand:hover {
+  color: #1f8a8a !important;
+}
+
+.navbar-brand {
+  color: #1f8a8a !important;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  color: #f5f5f5 !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #1f8a8a !important;
+}
+
+/* hide navbar only on homepage */
+
+body.homepage .navbar {
+  display: none !important;
+}
 
 body.homepage {
-  background-image: url("images/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding-top: 0 !important;
+}
+
+/* =====================================================
+   HOMEPAGE
+===================================================== */
+
+body.homepage {
+  background-color: #2f2f2f;
 }
 
 body.homepage main {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0,0,0,0.45);
   min-height: 100vh;
-  max-width: 850px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem;
+  max-width: none;
+  margin: 0;
+  padding: 1rem 0 2rem 0;
+}
+
+/* banner */
+
+.homepage-banner-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .hero-banner {
+  display: block;
   width: 100%;
-  height: 330px;
+  height: 280px;
   object-fit: cover;
   object-position: center 28%;
   border-radius: 14px;
-  margin-bottom: 5px !important;
-  filter: brightness(0.75);
+  margin: 0 0 18px 0;
+  filter: brightness(0.82) contrast(1.05);
 }
 
-/* Homepage header block */
+/* content */
+
+.homepage-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* header */
 
 .homepage-header {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 28px;
+  margin: 0 0 4px 0;
 }
 
-.homepage-header h1 {
+.homepage-name {
   font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+  color: #f5f5f5;
+  margin: 0 0 8px 0;
 }
 
 .homepage-subtitle {
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   font-weight: 400;
   color: #cfcfcf;
-  margin-bottom: 8px;
+  margin: 0 0 2px 0;
 }
 
-.homepage-subtitle em {
-  font-style: italic;
+.homepage-tagline {
+  font-size: 1.1rem;
   color: #cfcfcf;
+  margin: 0 0 6px 0;
+}
+
+.homepage-tagline em {
+  font-style: italic;
 }
 
 .homepage-affiliation {
   font-size: 1.35rem;
   font-weight: 500;
-  margin-bottom: 0;
+  margin: 0 0 2px 0;
 }
 
 .homepage-affiliation a {
   color: #1f8a8a;
-  text-decoration: none;
 }
 
 .homepage-affiliation a:hover {
   color: #2aa3a3;
-  text-decoration: underline;
 }
 
-/* Homepage links / icons */
-
-.profile-links {
-  margin-top: 18px;
-  margin-bottom: 10px;
-}
-
-.profile-links a {
-  margin-right: 18px;
-  color: #1f8a8a;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.profile-links a:hover {
-  color: #2aa3a3;
-  text-decoration: underline;
-}
+/* icons */
 
 .profile-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 18px;
-  margin-top: 18px;
-  margin-bottom: 10px;
+  margin: 0 0 18px 0;
 }
 
 .profile-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.35rem;
   color: #1f8a8a;
-  text-decoration: none;
+  transition: transform 0.15s ease, color 0.15s ease;
 }
 
 .profile-icons a:hover {
   color: #2aa3a3;
+  transform: translateY(-2px);
 }
 
-/* ---- ABOUT PAGE ---- */
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
 
 .about-flex {
   display: flex;
@@ -139,17 +217,9 @@ body.homepage main {
   display: block;
 }
 
-/* Legacy columns spacing, if still used anywhere */
-
-.columns .column:first-child {
-  padding-right: 30px;
-}
-
-.about-columns {
-  align-items: flex-start;
-}
-
-/* ---- PUBLICATIONS ---- */
+/* =====================================================
+   PUBLICATIONS
+===================================================== */
 
 .pub-entry {
   display: flex;
@@ -158,12 +228,12 @@ body.homepage main {
   margin-bottom: 2rem;
   padding: 14px 10px;
   border-radius: 6px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   transition: all 0.2s ease;
 }
 
 .pub-entry:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255,255,255,0.05);
   transform: translateX(3px);
 }
 
@@ -182,7 +252,7 @@ body.homepage main {
   flex: 1;
 }
 
-/* Buttons */
+/* buttons */
 
 .btn {
   margin-top: 8px;
@@ -203,7 +273,7 @@ body.homepage main {
   color: #2aa3a3;
 }
 
-/* Award badge */
+/* award badge */
 
 .award {
   display: inline-block;
@@ -216,7 +286,9 @@ body.homepage main {
   font-weight: 600;
 }
 
-/* ---- ABSTRACTS / CALLOUTS ---- */
+/* =====================================================
+   ABSTRACTS / CALLOUTS
+===================================================== */
 
 .callout-note {
   background: transparent;
@@ -243,156 +315,11 @@ body.homepage main {
   margin-top: 6px;
 }
 
-/* Abstract toggle */
-
-.abstract {
-  display: inline-block;
-  margin-top: 8px;
-  margin-left: 6px;
-}
-
-.abstract summary {
-  display: inline-block;
-  cursor: pointer;
-  color: #bbbbbb;
-  font-size: 0.95rem;
-  list-style: none;
-}
-
-.abstract summary:hover {
-  color: white;
-}
-
-.abstract summary::-webkit-details-marker {
-  display: none;
-}
-
-.abstract[open] summary {
-  margin-bottom: 8px;
-}
-
-.abstract p {
-  margin-top: 10px;
-}
-
-/* Inline abstract block */
-
-.buttons-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
-  margin-bottom: 8px;
-}
-
-.abstract-inline {
-  display: inline-block;
-}
-
-.abstract-inline summary {
-  list-style: none;
-}
-
-.abstract-inline summary::-webkit-details-marker {
-  display: none;
-}
-
-.abstract-inline[open] {
-  display: block;
-  margin-top: 10px;
-}
-
-.abstract-inline .abstract-text {
-  margin-top: 10px;
-  color: #eaeaea;
-}
-
-/* ---- GENERAL TYPOGRAPHY ---- */
-
-h2 {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  padding-bottom: 8px;
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
-
-a {
-  color: #1f8a8a;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #3fb3b3;
-  text-decoration: underline;
-}
-
-/* ---- NAVBAR ---- */
-
-.navbar {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1030;
-  background-color: rgba(38, 38, 38, 0.95) !important;
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.navbar a,
-.navbar-brand {
-  color: #f5f5f5 !important;
-}
-
-.navbar a:hover,
-.navbar-brand:hover {
-  color: #1f8a8a !important;
-}
-
-.navbar-brand {
-  color: #1f8a8a !important;
-  font-weight: 600;
-}
-
-.navbar-brand:hover {
-  color: #2aa3a3 !important;
-}
-
-.navbar-nav .nav-link {
-  color: #f5f5f5 !important;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #1f8a8a !important;
-}
-
-/* ---- MOBILE ---- */
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media (max-width: 768px) {
-  .columns {
-    display: block;
-  }
-
-  .columns .column:first-child {
-    padding-right: 0;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .about-columns {
-    display: block;
-  }
-
-  .about-columns .column:first-child {
-    width: 100% !important;
-    padding-right: 0;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-
-  .about-columns .column:last-child {
-    width: 100% !important;
-  }
 
   .about-flex {
     flex-direction: column;
@@ -415,7 +342,16 @@ a:hover {
     margin-right: auto;
   }
 
-  .homepage-header h1 {
+  .homepage-banner-wrap,
+  .homepage-content {
+    padding: 0 1rem;
+  }
+
+  .hero-banner {
+    height: 220px;
+  }
+
+  .homepage-name {
     font-size: 2.3rem;
   }
 
@@ -426,4 +362,5 @@ a:hover {
   .homepage-affiliation {
     font-size: 1.15rem;
   }
+
 }
